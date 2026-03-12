@@ -13,7 +13,7 @@
     
 <div id="calculator">
 
-<input id ="display" readonly>
+<input id ="display" readonly type="text" placeholder="0" >
 
 <div id="keys" >
 
@@ -34,11 +34,10 @@
    <button onclick="oppendToDisplay( '.')">.</button>
    <button onclick="calculate('=')" class="equal_btn">=</button>
    <button onclick="clearDisplay()" class="oparetor_btn">C</button>
-
+   <button onclick="deleteLastEntry()" class="oparetor_btn">x</button>
 
 </div>
-
-
+    <small class="created-by">Created by G. Rabbani</small>
 </div>
     <script src="app.js"></script>   
 </body>

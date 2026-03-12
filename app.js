@@ -12,6 +12,10 @@ function clearDisplay() {
     display.value = '';
 }
 
+function deleteLastEntry() {
+    display.value = display.value.slice(0, -1);
+}
+
 
 function calculate() {
 
