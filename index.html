@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic_Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="Cltr-icon.png" type="image/x-icon">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass Calculator</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
-<div id="calculator">
 
-<input id ="display" readonly type="text" placeholder="0" >
+<div class="calculator">
 
-<div id="keys" >
+<input type="text" id="display" placeholder="0" readonly>
 
-   <button onclick="oppendToDisplay( '+')" class="oprt_btn" >+</button>
-   <button onclick="oppendToDisplay( '7')">7</button>
-   <button onclick="oppendToDisplay( '8')">8</button>
-   <button onclick="oppendToDisplay( '9')">9</button>
-   <button onclick="oppendToDisplay( '-')"class="oprt_btn" >-</button>
-   <button onclick="oppendToDisplay( '4')">4</button>
-   <button onclick="oppendToDisplay( '5')">5</button>
-   <button onclick="oppendToDisplay( '6')">6</button>
-   <button onclick="oppendToDisplay( '*')"class="oprt_btn" >*</button>
-   <button onclick="oppendToDisplay( '1')">1</button>
-   <button onclick="oppendToDisplay( '2')">2</button>
-   <button onclick="oppendToDisplay( '3')">3</button>
-   <button onclick="oppendToDisplay( '/')" class="oprt_btn">/</button>
-   <button onclick="oppendToDisplay( '0')">0</button>
-   <button onclick="oppendToDisplay( '.')">.</button>
-   <button onclick="calculate('=')" class="equal_btn">=</button>
-   <button onclick="clearDisplay()" class="oparetor_btn">C</button>
-   <button onclick="deleteLastEntry()" class="oparetor_btn">x</button>
+<div class="keys">
+
+<button onclick="clearDisplay()" class="operator">C</button>
+<button onclick="deleteLast()">⌫</button>
+<button onclick="append('/')" class="operator">/</button>
+<button onclick="append('*')" class="operator">*</button>
+
+<button onclick="append('7')">7</button>
+<button onclick="append('8')">8</button>
+<button onclick="append('9')">9</button>
+<button onclick="append('-')" class="operator">-</button>
+
+<button onclick="append('4')">4</button>
+<button onclick="append('5')">5</button>
+<button onclick="append('6')">6</button>
+<button onclick="append('+')" class="operator">+</button>
+
+<button onclick="append('1')">1</button>
+<button onclick="append('2')">2</button>
+<button onclick="append('3')">3</button>
+<button onclick="calculate()" class="equal">=</button>
+
+<button onclick="append('0')" class="zero">0</button>
+<button onclick="append('.')">.</button>
 
 </div>
-    <small class="created-by">Created by G. Rabbani</small>
+
+<p class="creator">Created by G. Rabbani</p>
+
 </div>
-    <script src="app.js"></script>   
+
+<script src="app.js"></script>
+
 </body>
-
 </html>

@@ -1,30 +1,29 @@
-// calculator program
+const display = document.getElementById("display");
 
-
-const display = document.getElementById('display');
-
-function oppendToDisplay(input) {
-
-    display.value += input;
+function append(value){
+display.value += value;
 }
 
-function clearDisplay() {
-    display.value = '';
+function clearDisplay(){
+display.value = "";
 }
 
-function deleteLastEntry() {
-    display.value = display.value.slice(0, -1);
+function deleteLast(){
+display.value = display.value.slice(0,-1);
 }
 
+function calculate(){
 
-function calculate() {
+try{
 
-      try {
-        display.value = eval(display.value);
-      }
-     catch (error) {
-        display.value = "Error";
-      }
-    display.value = eval(display.value);
+display.value = eval(display.value);
+
 }
 
+catch{
+
+display.value = "Error";
+
+}
+
+}
